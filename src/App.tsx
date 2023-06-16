@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import styles from "./App.module.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <nav className={styles.nav}>
+        <div className={styles.navContainer}>
+          <h1 className={styles.logo}>
+            <a className={styles.link} href="/">
+              React Shop
+            </a>
+          </h1>
+          <div className={styles.left}>
+            <ul className={styles.ulContainer}>
+              <li className={styles.ulItem}>패션</li>
+              <li className={styles.ulItem}>악세사리</li>
+              <li className={styles.ulItem}>디지털</li>
+            </ul>
+          </div>
+          <div className={styles.right}>
+            <label>
+              <input  type="checkbox" />
+            </label>
+            <input className={styles.sreach} placeholder="검색" />
+            <div className={styles.cart}>icon</div>
+          </div>
+        </div>
+      </nav>
+      <div className={styles.body}>
+        <div className={styles.carouselSlide}>carousel-slide</div>
+        <div className={styles.fashion}>fashion</div>
+        <div className={styles.accessories}>accessories</div>
+        <div className={styles.digital}>digital</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className={styles.footer}>footer</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
