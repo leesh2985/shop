@@ -1,6 +1,6 @@
-import styles from './FashionCard.module.css';
+import styles from './DigitalCard.module.css';
 
-export default function FashionCard() {
+export default function DigitalCard() {
   const imgUrl = 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg';
   return (
     <a className={styles.cardBtn}>
