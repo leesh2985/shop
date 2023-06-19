@@ -2,6 +2,7 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import './App.css';
+import CarouselRoot from './components/CarouselRoot';
 import Header from './components/Header';
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
     <main className="App">
       <Header />
       <section className="body">
-        
+        <CarouselRoot />
       </section>
-      만들기
+
       {/* <div className={styles.body}>
         <div className={styles.carouselSlide}>carousel-slide</div>
         <div className={styles.fashion}>fashion</div>

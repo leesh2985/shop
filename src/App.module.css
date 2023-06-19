@@ -57,6 +57,7 @@
 .sreach {
   border-radius: 6px;
 }
+
 .body {
   height: 2836px;
   min-height: calc(100vh - 4rem - 224px);

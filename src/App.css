@@ -15,3 +15,9 @@ body {
   margin: 0 auto;
   padding: 2rem; */
 }
+
+.body {
+  padding-top: 4rem;
+  height: 2742px;
+  min-height: calc(100vh - 4rem - 224px);
+}
