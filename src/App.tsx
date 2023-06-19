@@ -10,6 +10,9 @@ function App() {
   return (
     <main className="App">
       <Header />
+      <section className="body">
+        
+      </section>
       만들기
       {/* <div className={styles.body}>
         <div className={styles.carouselSlide}>carousel-slide</div>

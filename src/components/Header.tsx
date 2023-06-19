@@ -1,4 +1,6 @@
 import styles from './Header.module.css';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { BiSun } from 'react-icons/bi';
 
 export default function Header() {
   return (
@@ -29,11 +31,17 @@ export default function Header() {
           </ul>
         </div>
         <div className={styles.right}>
-          <label>
-            <input type="checkbox" />
+          <label className={styles.label}>
+            <button className={styles.mode}>
+              <BiSun />
+            </button>
           </label>
           <input className={styles.sreach} placeholder="검색" />
-          <div className={styles.cart}>icon</div>
+          <button className={styles.bag}>
+            <a className={styles.linkbag} href="/cart">
+              <HiOutlineShoppingBag />
+            </a>
+          </button>
         </div>
       </div>
     </nav>
