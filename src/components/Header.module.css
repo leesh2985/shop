@@ -1,0 +1,66 @@
+.nav {
+  padding: 8px;
+  background: #191d24;
+  color: #fff;
+}
+
+.navContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1360px;
+  height: 48px;
+  margin: auto;
+}
+
+.logo {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.left {
+  flex: 1 1 0%;
+}
+
+.ulContainer {
+  display: flex;
+  margin-left: 0.5rem;
+
+  align-items: center;
+}
+
+.linkLi {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.ulItem {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  height: 2rem;
+  padding: 0 0.75rem;
+}
+
+.right {
+  display: flex;
+}
+
+.sreach {
+  border-radius: 6px;
+}
