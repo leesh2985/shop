@@ -1,0 +1,13 @@
+.fashionContainer {
+  max-width: 1360px;
+  padding: 3rem 0.5rem 2rem;
+  margin: 2.5rem 19.4688rem 0px;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  color: #a6adbb;
+  margin: 0px 0px 32px;
+}

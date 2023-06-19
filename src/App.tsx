@@ -2,7 +2,9 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import './App.css';
-import CarouselRoot from './components/CarouselRoot';
+import CarouselRoot from './components/Carousel/CarouselRoot';
+import FashionPage from './components/Fashion/FashionPage';
+
 import Header from './components/Header';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <Header />
       <section className="body">
         <CarouselRoot />
+        <FashionPage />
       </section>
 
       {/* <div className={styles.body}>
