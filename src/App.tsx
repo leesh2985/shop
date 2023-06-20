@@ -25,9 +25,6 @@ function App() {
           <DigitalPage />
         </section>
         <Footer />
-
-        {/* 
-      <div className={styles.footer}>footer</div> */}
       </main>
     </BrowserRouter>
   );
