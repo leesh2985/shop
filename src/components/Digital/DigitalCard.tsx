@@ -3,9 +3,11 @@ import styles from './DigitalCard.module.css';
 
 interface DigitalCardProps {
   imgUrl: string;
+  title: string;
+  price: string;
 }
 
-export default function DigitalCard({ imgUrl }: DigitalCardProps) {
+export default function DigitalCard({ imgUrl, title, price }: DigitalCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -20,8 +22,8 @@ export default function DigitalCard({ imgUrl }: DigitalCardProps) {
         </figure>
 
         <div className={styles.info}>
-          <p className={styles.title}>WD 2TB Elements Portable External Hard Drive - USB 3.0</p>
-          <p className={styles.text}>$64</p>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.text}>{price}</p>
         </div>
       </li>
     </a>

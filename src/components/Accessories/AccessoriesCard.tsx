@@ -3,9 +3,11 @@ import styles from './AccessoriesCard.module.css';
 
 interface AccessoriesCardProps {
   imgUrl: string;
+  title: string;
+  price: string;
 }
 
-export default function AccessoriesCard({ imgUrl }: AccessoriesCardProps) {
+export default function AccessoriesCard({ imgUrl, title, price }: AccessoriesCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -19,8 +21,8 @@ export default function AccessoriesCard({ imgUrl }: AccessoriesCardProps) {
         </figure>
 
         <div className={styles.info}>
-          <p className={styles.title}>John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</p>
-          <p className={styles.text}>$695</p>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.text}>{price}</p>
         </div>
       </li>
     </a>

@@ -3,9 +3,11 @@ import styles from './FashionCard.module.css';
 
 interface FashionCardProps {
   imgUrl: string;
+  title: string;
+  price: string;
 }
 
-export default function FashionCard({ imgUrl }: FashionCardProps) {
+export default function FashionCard({ imgUrl, title, price }: FashionCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -20,8 +22,8 @@ export default function FashionCard({ imgUrl }: FashionCardProps) {
         </figure>
 
         <div className={styles.info}>
-          <p className={styles.title}>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
-          <p className={styles.text}>$110</p>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.text}>{price}</p>
         </div>
       </li>
     </a>
