@@ -14,7 +14,6 @@
   text-decoration-line: none;
   color: inherit;
   text-decoration: inherit;
-  color: #a6adbb;
   font-size: 0.875rem;
 }
 
@@ -33,11 +32,9 @@
 }
 
 .fillCurrent {
-  color: #a6adbb;
   fill: currentColor;
 }
 
 .copy {
-  color: #a6adbb;
   font-size: 0.875rem;
 }

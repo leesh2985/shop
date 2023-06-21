@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { BsStarFill } from 'react-icons/bs';
+import { FaStarHalf } from 'react-icons/fa';
 import styles from './FashionDetail.module.css';
 import BagBtn from './BagBtn';
 
@@ -29,7 +31,16 @@ export default function FashionDetail() {
             Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the
             padded sleeve, your everyday
           </p>
-          <div></div>
+          <div className={styles.starContainer}>
+            <div className={styles.star}>
+              <BsStarFill />
+              <BsStarFill />
+              <BsStarFill />
+              <FaStarHalf />
+              <BsStarFill />
+            </div>
+            <div className={styles.starPoint}>3.9 / 120 참여</div>
+          </div>
           <p className={styles.momey}>$110</p>
           <BagBtn />
         </div>

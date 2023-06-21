@@ -9,7 +9,6 @@
 
 .fashionUl {
   display: flex;
-  color: #a6adbb;
 }
 
 .fashionItem {
@@ -66,7 +65,6 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
-  color: #a6adbb;
 }
 
 .badge {
@@ -89,8 +87,28 @@
 .cardInfo {
   text-align: left;
   flex-grow: 1;
-  color: #a6adbb;
   font-size: 16px;
+}
+
+.starContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.star {
+  position: relative;
+  display: inline-flex;
+  color: rgb(250 204 21);
+  border: none;
+}
+
+.star:last-child {
+  color: rgb(167, 163, 148);
+}
+
+.starPoint {
+  margin-left: 0.5rem;
 }
 
 .momey {
@@ -99,6 +117,4 @@
   margin-bottom: 1rem;
   flex-grow: 1;
   font-size: 30px;
-  color: #a6adbb;
 }
-
