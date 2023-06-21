@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './DigitalCard.module.css';
 
-export default function DigitalCard() {
-  const imgUrl = 'https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg';
+interface DigitalCardProps {
+  imgUrl: string;
+}
+
+export default function DigitalCard({ imgUrl }: DigitalCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {

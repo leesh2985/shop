@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './AccessoriesCard.module.css';
 
-export default function AccessoriesCard() {
-  const imgUrl = 'https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg';
+interface AccessoriesCardProps {
+  imgUrl: string;
+}
+
+export default function AccessoriesCard({ imgUrl }: AccessoriesCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {

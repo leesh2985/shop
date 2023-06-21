@@ -1,7 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './FashionCard.module.css';
 
-export default function FashionCard({ imgUrl }) {
+interface FashionCardProps {
+  imgUrl: string;
+}
+
+export default function FashionCard({ imgUrl }: FashionCardProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
