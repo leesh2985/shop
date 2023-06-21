@@ -1,4 +1,4 @@
-import styles from './Digital.module.css';
+import styles from './DigitalDetail.module.css';
 
 const imgUrl = 'https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg';
 
