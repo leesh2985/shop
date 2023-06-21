@@ -1,4 +1,5 @@
 import styles from './AccessoriesDetail.module.css';
+import BagBtn from './BagBtn';
 
 const imgUrl = 'https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg';
 
@@ -30,12 +31,7 @@ export default function AccessoriesDetail() {
           </p>
           <div></div>
           <p className={styles.momey}>$695</p>
-          <div className={styles.cardClick}>
-            <button className={styles.cardBtn}>장바구니에 담기</button>
-            <a className={styles.cardBag} href="/cart">
-              장바구니로 이동
-            </a>
-          </div>
+          <BagBtn />
         </div>
       </div>
     </section>

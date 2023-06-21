@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import styles from './FashionDetail.module.css';
+import BagBtn from './BagBtn';
 
 const imgUrl = 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg';
 
@@ -9,7 +11,9 @@ export default function FashionDetail() {
         <div className={styles.text}>
           <ul className={styles.fashionUl}>
             <li className={styles.fashionItem}>패션</li>
-            <li className={styles.fashionItem}>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</li>
+            <li className={styles.fashionItem}>
+              <Link to="/fashion-detail">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -27,12 +31,7 @@ export default function FashionDetail() {
           </p>
           <div></div>
           <p className={styles.momey}>$110</p>
-          <div className={styles.cardClick}>
-            <button className={styles.cardBtn}>장바구니에 담기</button>
-            <a className={styles.cardBag} href="/cart">
-              장바구니로 이동
-            </a>
-          </div>
+          <BagBtn />
         </div>
       </div>
     </section>

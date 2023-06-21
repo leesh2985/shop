@@ -1,3 +1,4 @@
+import BagBtn from './BagBtn';
 import styles from './DigitalDetail.module.css';
 
 const imgUrl = 'https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg';
@@ -29,12 +30,7 @@ export default function DigitalDetail() {
           </p>
           <div></div>
           <p className={styles.momey}>$64</p>
-          <div className={styles.cardClick}>
-            <button className={styles.cardBtn}>장바구니에 담기</button>
-            <a className={styles.cardBag} href="/cart">
-              장바구니로 이동
-            </a>
-          </div>
+          <BagBtn />
         </div>
       </div>
     </section>
