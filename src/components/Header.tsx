@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
-import { BiSun } from 'react-icons/bi';
+import { BiSun, BiMoon } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -35,6 +35,7 @@ export default function Header() {
           <label className={styles.label}>
             <button className={styles.mode}>
               <BiSun />
+              <BiMoon />
             </button>
           </label>
           <input className={styles.sreach} placeholder="검색" />
