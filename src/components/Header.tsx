@@ -1,6 +1,7 @@
 import styles from './Header.module.css';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { BiSun } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <div className={styles.navContainer}>
         <h1 className={styles.logo}>
           <a className={styles.link} href="/">
-            React Shop
+            <Link to="/"> React Shop</Link>
           </a>
         </h1>
         <div className={styles.left}>

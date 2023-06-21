@@ -1,14 +1,13 @@
 .cardBtn {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+  border-color: rgb(31 41 55);
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: var(--rounded-box, 1rem);
+  border-radius: 16px;
 }
 
 .item {
-  border: 1px solid rgb(31 41 55 / var(--tw-border-opacity));
+  border: 1px solid rgb(31 41 55);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 18.5625rem;
@@ -24,6 +23,11 @@
   align-items: center;
   justify-content: center;
   height: 20rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imgFlex:hover {
+  transform: scale(1.1);
 }
 
 .img {

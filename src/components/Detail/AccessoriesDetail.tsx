@@ -1,15 +1,17 @@
-import styles from './FashionDetail.module.css';
+import styles from './AccessoriesDetail.module.css';
 
-const imgUrl = 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg';
+const imgUrl = 'https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg';
 
-export default function FashionDetail() {
+export default function AccessoriesDetail() {
   return (
     <section className={styles.container}>
       <div>
         <div className={styles.text}>
           <ul className={styles.fashionUl}>
-            <li className={styles.fashionItem}>패션</li>
-            <li className={styles.fashionItem}>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</li>
+            <li className={styles.fashionItem}>악세서리</li>
+            <li className={styles.fashionItem}>
+              John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet
+            </li>
           </ul>
         </div>
       </div>
@@ -19,14 +21,15 @@ export default function FashionDetail() {
         </figure>
         <div className={styles.cardText}>
           <h2 className={styles.cardTitle}>
-            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops<span className={styles.badge}>NEW</span>
+            John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet
+            <span className={styles.badge}>NEW</span>
           </h2>
           <p className={styles.cardInfo}>
-            Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the
-            padded sleeve, your everyday
+            From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's
+            pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.
           </p>
           <div></div>
-          <p className={styles.momey}>$110</p>
+          <p className={styles.momey}>$695</p>
           <div className={styles.cardClick}>
             <button className={styles.cardBtn}>장바구니에 담기</button>
             <a className={styles.cardBag} href="/cart">

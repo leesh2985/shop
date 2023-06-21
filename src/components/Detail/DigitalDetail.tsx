@@ -1,15 +1,15 @@
-import styles from './FashionDetail.module.css';
+import styles from './Digital.module.css';
 
-const imgUrl = 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg';
+const imgUrl = 'https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg';
 
-export default function FashionDetail() {
+export default function DigitalDetail() {
   return (
     <section className={styles.container}>
       <div>
         <div className={styles.text}>
           <ul className={styles.fashionUl}>
-            <li className={styles.fashionItem}>패션</li>
-            <li className={styles.fashionItem}>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</li>
+            <li className={styles.fashionItem}>디지털</li>
+            <li className={styles.fashionItem}>WD 2TB Elements Portable External Hard Drive - USB 3.0</li>
           </ul>
         </div>
       </div>
@@ -19,14 +19,16 @@ export default function FashionDetail() {
         </figure>
         <div className={styles.cardText}>
           <h2 className={styles.cardTitle}>
-            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops<span className={styles.badge}>NEW</span>
+            WD 2TB Elements Portable External Hard Drive - USB 3.0
+            <span className={styles.badge}>NEW</span>
           </h2>
           <p className={styles.cardInfo}>
-            Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the
-            padded sleeve, your everyday
+            USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility
+            Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating
+            systems; Compatibility may vary depending on user’s hardware configuration and operating system
           </p>
           <div></div>
-          <p className={styles.momey}>$110</p>
+          <p className={styles.momey}>$64</p>
           <div className={styles.cardClick}>
             <button className={styles.cardBtn}>장바구니에 담기</button>
             <a className={styles.cardBag} href="/cart">
